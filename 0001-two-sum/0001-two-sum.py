@@ -6,15 +6,15 @@ class Solution(object):
         :rtype: List[int]
         """
         
-        dickshionary = {}
+        d = {}
         
         for i, nums in enumerate(nums):
             complement = target - nums
             
-            if complement in dickshionary:
-                return(dickshionary[complement],i)
+            if complement in d:
+                return(d[complement],i)
             
-            dickshionary[nums] = i
+            d[nums] = i
                 
                 
                 
